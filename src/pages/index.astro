@@ -1,101 +1,97 @@
 ---
-import Card from '../components/Card.astro';
-import Layout from '../layouts/Layout.astro';
+import Card from "../components/Card.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout title='Dewa Portfolio.'>
-    <main
-        class='h-screen bg-orange text-white justify-center flex flex-col gap-10 hover:bg-blue transition-all delay-100 px-11'
-    >
-        <!-- <div class='bg-orange h-screen w-f'> -->
-        <div class='flex flex-col gap-10'>
-            <h1
-                class='text-6xl sm:text-8xl dm-sans font-bold'
-                data-aos='fade-right'
-            >
-                Project Showcase
-            </h1>
-            <h2
-                class='text-3xl sm:text-4xl jakarta'
-                data-aos='fade-right'
-                data-aos-delay='300'
-            >
-                Made by <a href=''>Dewa.</a>
-            </h2>
-            <h3
-                class='text-xl sm:text-2xl dm-sans'
-                data-aos='fade-right'
-                data-aos-delay='350'
-            >
-                <a href=''
-                    >Currently an undergraduate in State Polytechnic of Malang.</a
-                >
-            </h3>
-            <a target='_blank' href='https://github.com/DewaMadeWira'>
-                <h4
-                    class='text-xl sm:text-xl dm-sans hover:underline'
-                    data-aos='fade-right'
-                    data-aos-delay='350'
-                >
-                    Github Link here
-                </h4>
-            </a>
-        </div>
-        <div class='flex justify-end pt-10'>
-            <a href='/#showcase'>
-                <button
-                    class='jakarta italic p-3 font-bold sm:text-2xl mr-10 border-[2px] sm:px-7 border-white sm:p-5 hover:-translate-y-2 transition-all'
-                    >SHOWCASE</button
-                >
-            </a>
-        </div>
-        <!-- </div> -->
-    </main>
-    <section
-        id='showcase'
-        class='h-fit sm:h-fit md:h-screen bg-black p-10 grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-20'
-    >
-        <Card
-            transition='500'
-            title='Dawarehouse App'
-            language='Next JS'
-            logo='/next.png'
-            description='Inventory Management System built using Next JS and Prisma.'
-            link='https://github.com/DewaMadeWira/dawarehouse-app-next'
-        />
-        <Card
-            transition='550'
-            title='React URL Shortener'
-            language='React JS'
-            logo='/react.png'
-            description='URL shortener with math quiz before the user can redirect to the desired link.'
-            link='https://github.com/DewaMadeWira/short-math'
-        />
-        <Card
-            transition='600'
-            title='React Pomodoro Timer'
-            language='React JS'
-            logo='/react.png'
-            description='Timer website built using React JS. Mainly used using the pomodoro technique.'
-            link='https://react-pomo-pwa.vercel.app/'
-        />
-        <Card
-            transition='650'
-            title='Webdev4Dummies'
-            language='HTML,CSS,JS'
-            logo='/html.png'
-            description='Website aims to provide code snippets for common frontend code.'
-            link='https://dewamadewira.github.io/WebDev4Dummies/'
-        />
-        <Card
-            transition='500'
-            title='2Fast2Type'
-            language='HTML,CSS,JS'
-            logo='/html.png'
-            description='Typing game built using vanilla JS. Words using random word API'
-            link='https://dewamadewira.github.io/2fast2type.github.io/'
-        />
-        <!--<Card transition='600' />
+<Layout title="Dewa Portfolio.">
+  <main
+    class="h-screen bg-orange text-white justify-center flex flex-col gap-10 hover:bg-blue transition-all delay-100 px-11"
+  >
+    <!-- <div class='bg-orange h-screen w-f'> -->
+    <div class="flex flex-col gap-10">
+      <h1 class="text-6xl sm:text-8xl dm-sans font-bold" data-aos="fade-right">
+        Project Showcase
+      </h1>
+      <h2
+        class="text-3xl sm:text-4xl jakarta"
+        data-aos="fade-right"
+        data-aos-delay="300"
+      >
+        Made by <a href="">Dewa.</a>
+      </h2>
+      <h3
+        class="text-xl sm:text-2xl dm-sans"
+        data-aos="fade-right"
+        data-aos-delay="350"
+      >
+        <a href="">Currently an undergraduate in State Polytechnic of Malang.</a
+        >
+      </h3>
+      <a target="_blank" href="https://github.com/DewaMadeWira">
+        <h4
+          class="text-xl sm:text-xl dm-sans hover:underline"
+          data-aos="fade-right"
+          data-aos-delay="350"
+        >
+          Github Link here
+        </h4>
+      </a>
+    </div>
+    <div class="flex justify-end pt-10">
+      <a href="/#showcase">
+        <button
+          class="jakarta italic p-3 font-bold sm:text-2xl mr-10 border-[2px] sm:px-7 border-white sm:p-5 hover:-translate-y-2 transition-all"
+          >SHOWCASE</button
+        >
+      </a>
+    </div>
+    <!-- </div> -->
+  </main>
+  <section
+    id="showcase"
+    class="h-fit sm:h-fit md:min-h-screen bg-black p-10 grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-20"
+  >
+    <Card
+      transition="500"
+      title="Dawarehouse App"
+      language="Next JS"
+      logo="/next.png"
+      description="Inventory Management System built using Next JS and Prisma."
+      link="/dawarehouse"
+    />
+    <Card
+      transition="550"
+      title="React URL Shortener"
+      language="React JS"
+      logo="/react.png"
+      description="URL shortener with math quiz before the user can redirect to the desired link."
+      link="https://github.com/DewaMadeWira/short-math"
+    />
+    <Card
+      transition="600"
+      title="React Pomodoro Timer"
+      language="React JS"
+      logo="/react.png"
+      description="Timer website built using React JS. Mainly used using the pomodoro technique."
+      link="https://react-pomo-pwa.vercel.app/"
+    />
+    <Card
+      transition="650"
+      title="Webdev4Dummies"
+      language="HTML,CSS,JS"
+      logo="/html.png"
+      description="Website aims to provide code snippets for common frontend code."
+      link="https://dewamadewira.github.io/WebDev4Dummies/"
+    />
+    <Card
+      transition="500"
+      title="2Fast2Type"
+      language="HTML,CSS,JS"
+      logo="/html.png"
+      description="Typing game built using vanilla JS. Words using random word API"
+      link="https://dewamadewira.github.io/2fast2type.github.io/"
+    />
+    <!--<Card transition='600' />
         <Card transition='650' /> -->
-    </section>
+  </section>
 </Layout>

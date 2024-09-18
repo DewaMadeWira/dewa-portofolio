@@ -1,44 +1,44 @@
 ---
 interface Props {
-    transition: string;
-    title: string;
-    description: string;
-    logo: string;
-    language: string;
-    link: string;
+  transition: string;
+  title: string;
+  description: string;
+  logo: string;
+  language: string;
+  link: string;
 }
 
 const { transition, title, description, logo, language, link } = Astro.props;
 
-import '@fontsource/plus-jakarta-sans';
-import '@fontsource/dm-sans';
+import "@fontsource/plus-jakarta-sans";
+import "@fontsource/dm-sans";
 ---
 
-<a target='_blank' href={link}>
-    <div class='bg-white h-60' data-aos='fade-down' data-aos-delay={transition}>
-        <div
-            class='bg-black border-[3px] h-60 font-bold border-white text-white py-4 block -translate-x-2 -translate-y-2 hover:-translate-y-3 hover:-translate-x-3 transition-all'
-        >
-            <div class='flex items-center pl-2 gap-5 w-full mb-3'>
-                <img src={logo} alt='react-logo' class='h-10' />
-                <h2 class='jakarta italic font-medium'>{language}</h2>
-            </div>
-            <div class='px-4'>
-                <h3 class='text-2xl jakarta mb-5'>{title}</h3>
-                <p class='dm-sans font-normal'>
-                    {description}
-                </p>
-            </div>
-        </div>
+<a target="_blank" href={link}>
+  <div class="bg-white h-60" data-aos="fade-down" data-aos-delay={transition}>
+    <div
+      class="bg-black border-[3px] h-60 font-bold border-white text-white py-4 block -translate-x-2 -translate-y-2 hover:-translate-y-3 hover:-translate-x-3 transition-all"
+    >
+      <div class="flex items-center pl-2 gap-5 w-full mb-3">
+        <img src={logo} alt="react-logo" class="h-10" />
+        <h2 class="jakarta italic font-medium">{language}</h2>
+      </div>
+      <div class="px-4">
+        <h3 class="text-xl jakarta mb-5">{title}</h3>
+        <p class="dm-sans text-sm font-normal">
+          {description}
+        </p>
+      </div>
     </div>
+  </div>
 </a>
 
 <style is:global>
-    .dm-sans {
-        font-family: 'DM Sans', sans-serif;
-    }
+  .dm-sans {
+    font-family: "DM Sans", sans-serif;
+  }
 
-    .jakarta {
-        font-family: 'Plus Jakarta Sans', sans-serif;
-    }
+  .jakarta {
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
 </style>

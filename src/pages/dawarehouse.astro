@@ -1,0 +1,44 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<style>
+  /* h2 {
+    font-family: "DM Sans", sans-serif;
+  } */
+  .jakarta {
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+  .dm-sans {
+    font-family: "DM Sans", sans-serif;
+  }
+</style>
+
+<Layout title="Dawarehouse | Dewa Portofolio. ">
+  <div class="min-h-screen bg-black text-white">
+    <nav class="font-bold flex justify-between w-full px-5 pt-2 italic">
+      <h2 class="text-xl dm-sans">Home</h2>
+      <h2 class="text-xl">Contact</h2>
+    </nav>
+    <main class="mt-16 px-5">
+      <h1 class="text-5xl jakarta font-bold">Dawarehouse</h1>
+      <a
+        target="_blank"
+        href="https://github.com/DewaMadeWira/dawarehouse-app-next"
+        class="italic text-sm hover:underline jakarta mt-2"
+      >
+        https://github.com/DewaMadeWira/dawarehouse-app-next
+      </a>
+      <div data-aos="fade-down" data-aos-delay="550">
+        <div class="flex flex-col w-full items-center mt-10 gap-3 pt-3">
+          <div class="border-[3px] h-fit w-fit font-bold">
+            <img src="Home.png" width="700" alt="" />
+          </div>
+          <div class="border-[3px] h-fit w-fit font-bold">
+            <img src="Home.png" width="700" alt="" />
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+</Layout>
