@@ -1,4 +1,5 @@
 ---
+import ImageWeb from "../components/ImageWeb.astro";
 import Layout from "../layouts/Layout.astro";
 ---
 
@@ -29,15 +30,11 @@ import Layout from "../layouts/Layout.astro";
       >
         https://github.com/DewaMadeWira/dawarehouse-app-next
       </a>
-      <div data-aos="fade-down" data-aos-delay="550">
-        <div class="flex flex-col w-full items-center mt-10 gap-3 pt-3">
-          <div class="border-[3px] h-fit w-fit font-bold">
-            <img src="Home.png" width="700" alt="" />
-          </div>
-          <div class="border-[3px] h-fit w-fit font-bold">
-            <img src="Home.png" width="700" alt="" />
-          </div>
-        </div>
+      <div class="flex flex-col w-full items-center mt-10 gap-3 pt-3">
+        <ImageWeb />
+        <ImageWeb />
+        <ImageWeb />
+        <ImageWeb />
       </div>
     </main>
   </div>
