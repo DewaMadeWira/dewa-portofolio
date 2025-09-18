@@ -34,7 +34,7 @@ import Layout from "../layouts/Layout.astro";
         Dawarehouse
       </h1>
       <div class="flex flex-col">
-        <a
+        <!-- <a
           data-aos="fade-right"
           data-aos-delay="410"
           target="_blank"
@@ -42,19 +42,40 @@ import Layout from "../layouts/Layout.astro";
           class="italic text-sm hover:underline jakarta mt-2"
         >
           https://dawarehouse-app-next.vercel.app/
-        </a>
+        </a> -->
         <a
           data-aos="fade-right"
           data-aos-delay="420"
           target="_blank"
           href="https://github.com/DewaMadeWira/dawarehouse-app-next"
-          class="italic text-sm hover:underline jakarta mt-2"
+          class="italic text-sm hover:underline jakarta mt-2 underline text-lg"
         >
           https://github.com/DewaMadeWira/dawarehouse-app-next
         </a>
+        <p
+          data-aos="fade-right"
+          data-aos-delay="500"
+          class="mt-5 w-1/2 jakarta text-xl text-justify"
+        >
+          A modern Inventory Management System built with JavaScript, Prisma
+          ORM, and Shadcn/UI for a clean and responsive interface. It integrates
+          with a PostgreSQL database to ensure reliable data storage and
+          management.
+        </p>
+        <p
+          data-aos="fade-right"
+          data-aos-delay="500"
+          class="mt-5 w-1/2 jakarta text-2xl font-bold"
+        >
+          Key Features:
+        </p>
       </div>
       <div class="flex flex-col w-full items-center mt-10 gap-4 pt-3">
-        <ImageWeb image="Home" page="Home Page" />
+        <ImageWeb
+          image="Home"
+          page="Home Page"
+          description="A realtime dashboard calculated from the incoming and outgoing item, helping the user to keep track of their inventory."
+        />
         <ImageWeb image="About" page="About Page" />
         <ImageWeb image="Warehouse" page="Warehouse Page" />
         <ImageWeb image="Item" page="Item Page" />
