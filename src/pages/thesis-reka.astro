@@ -1,0 +1,106 @@
+---
+import ImageWeb from "../components/ImageWeb.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<style>
+  /* h2 {
+    font-family: "DM Sans", sans-serif;
+  } */
+  .jakarta {
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+  .dm-sans {
+    font-family: "DM Sans", sans-serif;
+  }
+</style>
+
+<Layout title="Dawarehouse | Dewa Portofolio. ">
+  <div class="min-h-screen bg-black text-white">
+    <nav class="font-bold flex justify-between w-full px-5 pt-2 italic">
+      <a href="/" class="text-xl dm-sans">Home</a>
+      <a
+        target="_blank"
+        href="https://www.linkedin.com/in/dwmdwira/"
+        class="text-xl hover:underline">Contact</a
+      >
+    </nav>
+    <main class="mt-16 px-5">
+      <h1
+        data-aos="fade-right"
+        data-aos="400"
+        class="text-5xl jakarta font-bold"
+      >
+        Document Management System
+      </h1>
+      <h2
+        data-aos="fade-right"
+        data-aos="400"
+        class="text-2xl jakarta font-bold"
+      >
+        Utilizing the Approval Design Pattern
+      </h2>
+      <div class="flex flex-col">
+        <!-- <a
+          data-aos="fade-right"
+          data-aos-delay="410"
+          target="_blank"
+          href="https://dawarehouse-app-next.vercel.app/"
+          class="italic text-sm hover:underline jakarta mt-2"
+        >
+          https://dawarehouse-app-next.vercel.app/
+        </a> -->
+
+        <p
+          data-aos="fade-right"
+          data-aos-delay="500"
+          class="mt-5 md:w-1/2 jakarta text-xl text-justify"
+        >
+          Document Management System build for thesis, implemented in
+          PT.Rekaindo Global Jasa. Utilizing the Approval Design Pattern, to
+          manage the document flow. This system includes three type of
+          documents. Memos, Meeting Invitation, and Meeting Summmary. Each
+          document has its own approval process and rules.
+          <br /><br />
+          The system have two type of roles. Manager and User. User will create the
+          document while Manager will approve the document. In the system, each division
+          will have one manager and a couple user.
+        </p>
+        <p
+          data-aos="fade-right"
+          data-aos-delay="500"
+          class="mt-5 w-1/2 jakarta text-2xl font-bold"
+        >
+          Key Features:
+        </p>
+      </div>
+      <div class="flex flex-col w-full items-center mt-10 gap-4 pt-3">
+        <ImageWeb
+          image="Home"
+          page="Dashboard Page"
+          description="Dashboard design to visualize document flow for each divisions."
+        />
+        <ImageWeb
+          image="Warehouse"
+          page="Memos Page"
+          description="Page to show what memos are waiting for approval. On manager side the manager can approve the memos. While the user can create it."
+        />
+        <ImageWeb
+          image="Warehouse"
+          page="Meeting Invitation Page"
+          description="Page to show what invitation are waiting for approval. On manager side the manager can approve the memos. While the user can create it."
+        />
+        <ImageWeb
+          image="Item"
+          page="Meeting Summary Page"
+          description="Page to show what invitation are waiting for approval. On manager side the manager can approve the memos. While the user can create it."
+        />
+        <ImageWeb
+          image="Item Add"
+          page="Approval Process Page"
+          description="Page to manage the approval process. Only admin can do this. This will only affect the newly created document. The old document will retain the previous approval process."
+        />
+      </div>
+    </main>
+  </div>
+</Layout>

@@ -6,20 +6,24 @@ interface Props {
   logo: string;
   language: string;
   link: string;
+  padding?: string;
 }
 
-const { transition, title, description, logo, language, link } = Astro.props;
+const { transition, title, description, logo, language, link, padding } =
+  Astro.props;
 
 import "@fontsource/plus-jakarta-sans";
 import "@fontsource/dm-sans";
 ---
 
-<a href={link}>
+<a href={link} class="h-fit">
   <div class="bg-white h-60" data-aos="fade-down" data-aos-delay={transition}>
     <div
       class="bg-black border-[3px] h-60 font-bold border-white text-white py-4 block -translate-x-2 -translate-y-2 hover:-translate-y-3 hover:-translate-x-3 transition-all"
     >
-      <div class="flex items-center pl-2 gap-5 w-full mb-3">
+      <div
+        class={`px-4 flex items-center ${padding ? padding : "pl-2"} gap-5 w-full mb-3 `}
+      >
         <img src={logo} alt="react-logo" class="h-10" />
         <h2 class="jakarta italic font-medium">{language}</h2>
       </div>
